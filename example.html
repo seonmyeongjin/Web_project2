@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo{
+            width : 150px;
+            height: 150px;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+            margin: 0;
+            line-height: 15px;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+
+        }
+        .form {
+            width: 100%;
+            max-width: 420px;
+            padding: 15px;
+            margin: auto;
+        }
+        .form_members input, .form_members label {
+            height: 3.125;
+            padding: 0.75rem;
+        }
+        .top {
+            text-align: center;
+        }
+        .form_input {
+            display: block;
+            width: 100%;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+        .form_members label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+            line-height: 1.5;
+            color: #495057;
+            pointer-events: none;
+            cursor: text;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+            transition: all .1s ease-in-out;
+        }
+        .checkbox {
+            margin-bottom: 1rem!important;
+        }
+        .sign {
+            display: block;
+            width: 100%;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 0.5rem 1rem;
+            line-height: 1.5;
+            border-radius: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+        <div class="top">
+            <img class = "photo" src="dog.jpg" alt="">
+            <h1 class="top_ment">Puppy Labels</h1>
+            <p>Build form controls with floating labels via the 
+                <code>:placeholder-shown</code> 
+                pseudo-element. 
+                <a href="https://caniuse.com/css-placeholder-shown">Works in latest Chrome, Safari, Firefox, and IE 10/11 (prefixed).</a>
+            </p>
+        </div>
+      
+        <div class="form_members">
+          <input type="email" class="form_input" id="inputEmail" placeholder="Email address" required="" autofocus="">
+        </div>
+      
+        <div class="form_members">
+          <input type="password" class="form_input" id="inputPassword" placeholder="Password" required="">
+        </div>
+      
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember me"> Remember me
+          </label>
+        </div>
+        <button class="sign" type="submit">Sign in</button>
+        <p class="year">© 2002-1025</p>
+      </form>
+</body>
+</html>

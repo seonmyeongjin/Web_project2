@@ -5,10 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #top h1, #top p, #menulist {
+            margin: 0;
+            padding: 0;
+        } 
+        #top, #section_side, #section_bottom, .menuitem {
+            border-radius: 4px;
+            margin: 4px;
+        }
+        #top{
+            background-color: #04AA6D; 
+            color: #f1f1f1;
+            height: 82px;
+            border-radius: 4px;
+            margin: 4px;
+            padding : 15px;
+        }
+        .wrapper {
+            position: relative;
+            overflow: auto;
+        }
+        #menubar {
+            width: 200px;
+            float: left;
+        }
+        .menuitem {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+        }
+        .menuitem:hover {
+            background-color: #ffffff
+        }
+        #section_top{
+            padding: 10px;
+            margin: 0 210px;
+        }
+        #section_side{
+            background-color: #32a4e7;
+            color: #ffffff;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+        #section_bottom{
+            border: 1px solid #d4d4d4;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+
+        
     </style>
 </head>
 <body>
-    <div class ='container wrapper'>
+    <div class = 'container'>
         <div id = 'top'>
             <h1>Welcome to 선명진(22200376) Homepage</h1>
             <p>Use the menu to select different Stylesheets</p>
