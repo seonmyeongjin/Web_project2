@@ -6,76 +6,75 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>한동대_22200376form</h1>
-    <form action="/submit" method="post">
-        <label for="text_input">이름 입력:</label>
-        <input type="text" id="text_input" name="text_input" required>
-        <br><br>
+<h1>한동대_22200376form</h1>
+<form action="/submit" method="post">
+    <label for="name">이름 입력:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
 
-        <label>성별:</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">남성</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">여성</label>
-        <br><br>
+    <label>성별:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">남성</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">여성</label>
+    <br><br>
 
-        <label>재학/졸업:</label>
-        <input type="checkbox" id="interest1" name="interests" value="sports">
-        <label for="enrolled">재학생</label>
-        <input type="checkbox" id="interest2" name="interests" value="music">
-        <label for="old">졸업생</label>
-        <br><br>
+    <label>재학/졸업:</label>
+    <input type="checkbox" id="enrolled" name="student" value="enrolled">
+    <label for="enrolled">재학생</label>
+    <input type="checkbox" id="old"a name="student" value="old">
+    <label for="old">졸업생</label>
+    <br><br>
 
-        <label for="major">전공:</label>
-        <select id="major" name="major">
-            <option value="gls">GLS학부</option>
-            <option value="lan">국제어문학부</option>
-            <option value="man">경영경제학부</option>
-            <option value="law">법학부</option>
-            <option value="com">커뮤니케이션학부</option>
-            <option value="cou">상담복지학부</option>
-            <option value="lif">생명과학부</option>
-            <option value="arc">공간환경시스템학부</option>
-            <option value="ele">전산전자학부</option>
-            <option value="con">콘텐츠융합디자인학부</option>
-            <option value="car">기계제어학부</option>
-            <option value="ict">ICT창업학부</option>
-            <option value="edu">언어교육원</option>
-            <option value="ide">창의융합교육원</option>
-            <option value="ai">AI융합교육원</option>
-        </select>
-        <br><br>
+    <label for="major">전공:</label>
+    <select id="major" name="major">
+        <option value="gls">GLS학부</option>
+        <option value="lan">국제어문학부</option>
+        <option value="man">경영경제학부</option>
+        <option value="law">법학부</option>
+        <option value="com">커뮤니케이션학부</option>
+        <option value="cou">상담복지학부</option>
+        <option value="lif">생명과학부</option>
+        <option value="arc">공간환경시스템학부</option>
+        <option value="ele">전산전자학부</option>
+        <option value="con">콘텐츠융합디자인학부</option>
+        <option value="car">기계제어학부</option>
+        <option value="ict">ICT창업학부</option>
+        <option value="edu">언어교육원</option>
+        <option value="ide">창의융합교육원</option>
+        <option value="ai">AI융합교육원</option>
+    </select>
+    <br><br>
 
-        <label for="birth_date">생년월일:</label>
-        <input type="date" id="birth_date" name="birth_date">
-        <br><br>
+    <label for="birth_date">생년월일:</label>
+    <input type="date" id="birth_date" name="birth_date">
+    <br><br>
 
-        <label for="detail_major">세부전공:</label>
-        <textarea id="detail_major" name="detail_major" rows="4" cols="50"></textarea>
-        <br><br>
+    <label for="detail_major">세부전공:</label>
+    <textarea id="detail_major" name="detail_major" rows="4" cols="50"></textarea>
+    <br><br>
 
-        <fieldset>
-            <legend>학번</legend>
-            <label for="student_num">학번 정보 입력:</label>
-            <input type="text" id="student_num"" name="student_num"">
-        </fieldset>
-        <br><br>
+    <fieldset>
+        <legend>학번</legend>
+        <label for="student_num">학번 정보 입력:</label>
+        <input type="text" id="student_num" name="student_num">
+    </fieldset>
+    <br><br>
 
-        <label for="color">좋아하는 색상:</label>
-        <input type="color" id="color" name="color">
-        <br><br>
-        <label for="sns">선호하는 SNS:</label>
-        <input list="sns" name="sns" id="sns">
-        <datalist id="browsers">
-            <option value="Kakaotalk">
-            <option value="Line">
-            <option value="Facebook">
-            <option value="Instagram">
-            <option value="X(twiiter)">
-        </datalist>
-        <br><br>
+    <label for="color">좋아하는 색상:</label>
+    <input type="color" id="color" name="color">
+    <br><br>
+    <label for="sns">선호하는 SNS:</label>
+    <select name="sns" id="sns">
+        <option value="Kakaotalk">Kakaotalk</option>
+        <option value="Line">Line</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="X(twiiter)">X(twiiter)</option>
+    </select>
+    <br><br>
 
-        <input type="submit" value="제출">
-    </form>
+    <input type="submit" value="제출">
+</form>
 </body>
 </html>
